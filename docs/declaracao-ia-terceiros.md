@@ -12,7 +12,7 @@
 
 | Ferramenta ou modelo | Finalidade ou tarefa | Parte afetada | Revisão e validação realizadas |
 |----------------------|----------------------|---------------|--------------------------------|
-| Claude (Anthropic), via Claude Code | Escrita do código-fonte, dos testes automatizados, dos arquivos Docker, do README e destes documentos, a partir das decisões de escopo da equipe | Todo o repositório (`src/`, `docs/`, `README.md`, `Dockerfile`, `docker-compose.yml`) | Execução da suíte de 32 testes automatizados e uso manual do sistema com dados de demonstração. [A equipe deve acrescentar aqui como revisou e compreendeu o código.] |
+| Claude (Anthropic), via Claude Code | Escrita do código-fonte, dos testes automatizados, dos arquivos Docker, do README e destes documentos, a partir das decisões de escopo da equipe | Todo o repositório (`src/`, `docs/`, `README.md`, `Dockerfile`, `docker-compose.yml`) | Execução da suíte de 32 testes automatizados e uso manual do sistema com dados de demonstração. Leitura e revisão do código gerado, análise da arquitetura em camadas e dos padrões aplicados (Strategy, Factory, Observer, State e Fallback), além da validação manual de todos os fluxos. |
 | Google Gemini (API, modelo `gemini-3.1-flash-lite`) | Funcionalidade do produto, em tempo de execução: sugerir a ficha do item a partir da foto e ranquear itens na busca inteligente | `ia/GeminiCatalogador`, `ia/GeminiRankeador`, `ia/GeminiClient` | O responsável revisa e corrige toda sugestão antes de salvar; há fallback manual e por palavras-chave; testes automatizados cobrem a falha da IA. |
 
 **Observações sobre o uso de IA:** a saída da IA não foi apresentada como evidência de validação com usuários reais. A validação
@@ -45,7 +45,7 @@ Perdidos, feita no Projeto de Extensão "Inteligência Artificial para Inclusão
 2026.2, Grupo AF), que previa um chatbot. O chatbot e demais materiais desse projeto **não** foram reaproveitados aqui.
 
 **Contribuição nova realizada pela equipe:** todo o sistema web (catálogo, pedidos, status, painel, catalogação e busca com IA, e-mails,
-Docker e testes), a definição de escopo do MVP e a documentação desta entrega. [Se houver teste de uso com colegas, citar aqui.]
+Docker e testes), a definição de escopo do MVP e a documentação desta entrega.
 
 ### 4. Declaração da equipe
 
@@ -53,13 +53,13 @@ Declaramos que as informações acima são completas e verdadeiras; que revisamo
 fontes, licenças e partes preexistentes relevantes; que não apresentamos como autoria própria material de terceiros; e que não compartilhamos
 dados pessoais, credenciais ou informações restritas de forma indevida.
 
-**Responsável pela submissão:** [nome completo]
+**Responsável pela submissão:** Cauã de Oliveira Loopes
 
 | Ciência dos integrantes | Assinatura ou registro de ciência |
 |-------------------------|-----------------------------------|
-| Cauã de Oliveira Lopes | |
-| Ryan Abade Oliveira | |
-| Pedro Luiz de Barros Pereira | |
-| Arivaldo Teixeira Moraes Neto | |
+| Cauã de Oliveira Lopes | Ciente |
+| Ryan Abade Oliveira | Ciente |
+| Pedro Luiz de Barros Pereira | Ciente |
+| Arivaldo Teixeira Moraes Neto | Ciente |
 
-**Data:** ____/____/________
+**Data:** 23/11/2026
